@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Assignment | Vijay Coaching</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark">V</span>
+          <span>Vijay Coaching</span>
+        </a>
+        <div class="nav-links">
+          <a href="./index.html">Dashboard</a>
+          <a href="./upload.html" class="active">Upload</a>
+          <a href="./assignments.html">Assignments</a>
+          <a href="./students.html">Students</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="section panel">
+        <div class="section-header">
+          <h2>Upload New Assignment</h2>
+          <span>Create and share a new classroom task</span>
+        </div>
+
+        <form id="assignmentForm">
+          <div class="form-grid">
+            <label class="field">
+              <span>Assignment Title</span>
+              <input id="title" type="text" placeholder="Example: Algebra Practice Sheet 2" required />
+            </label>
+
+            <label class="field">
+              <span>Subject</span>
+              <select id="subject" required>
+                <option value="">Select subject</option>
+                <option>Mathematics</option>
+                <option>Science</option>
+                <option>English</option>
+                <option>History</option>
+                <option>Geography</option>
+                <option>Computer Science</option>
+                <option>General</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span>Class / Batch</span>
+              <input id="className" type="text" placeholder="Example: Class 8-A" required />
+            </label>
+
+            <label class="field">
+              <span>Due Date</span>
+              <input id="dueDate" type="date" required />
+            </label>
+          </div>
+
+          <label class="field" style="margin-top: 18px;">
+            <span>Instructions for Students</span>
+            <textarea id="instructions" placeholder="Write clear instructions for the assignment..."></textarea>
+          </label>
+
+          <label class="upload-box">
+            <span class="upload-label">Choose File</span>
+            <input id="assignmentFile" type="file" accept=".pdf,.doc,.docx,.ppt,.pptx,.zip,.png,.jpg,.jpeg" />
+            <span class="upload-file-name" id="selectedFileName">No file chosen</span>
+          </label>
+
+          <div class="form-actions">
+            <button class="primary-btn" type="submit">Publish Assignment</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

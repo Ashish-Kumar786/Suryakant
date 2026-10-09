@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vijay Coaching | Teacher Portal</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark">V</span>
+          <span>Vijay Coaching</span>
+        </a>
+        <div class="nav-links">
+          <a href="./index.html" class="active">Dashboard</a>
+          <a href="./upload.html">Upload</a>
+          <a href="./assignments.html">Assignments</a>
+          <a href="./students.html">Students</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="page-hero">
+        <div class="hero-card">
+          <h1>Upload assignments for your students</h1>
+          <p>
+            Keep your class organized with a simple portal for homework, study material,
+            and tracking student progress. Upload files, assign deadlines, and review the work in one place.
+          </p>
+          <div class="hero-badges">
+            <span>Homework</span>
+            <span>Study Files</span>
+            <span>Deadline Tracking</span>
+          </div>
+          <div class="hero-actions">
+            <a class="primary-btn" href="./upload.html">Upload Assignment</a>
+            <a class="secondary-btn" href="./assignments.html">View Board</a>
+          </div>
+        </div>
+
+        <div class="metric-grid">
+          <div class="metric-card">
+            <span class="label">Assignments</span>
+            <span class="value" id="totalAssignments">0</span>
+          </div>
+          <div class="metric-card">
+            <span class="label">Classes</span>
+            <span class="value" id="classCount">0</span>
+          </div>
+          <div class="metric-card">
+            <span class="label">Uploads</span>
+            <span class="value" id="uploadCount">0</span>
+          </div>
+          <div class="metric-card">
+            <span class="label">Due Soon</span>
+            <span class="value" id="dueSoonCount">0</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section panel">
+        <div class="section-header">
+          <h2>Teacher Overview</h2>
+          <span>Daily classroom checklist</span>
+        </div>
+
+        <div class="feature-grid">
+          <article class="notice-card">
+            <h3>Today's tasks</h3>
+            <ul class="notice-list">
+              <li>Review submitted work before 5 PM</li>
+              <li>Post the latest homework file</li>
+              <li>Send reminders for due dates</li>
+            </ul>
+          </article>
+
+          <article class="notice-card">
+            <h3>Class focus</h3>
+            <ul class="notice-list">
+              <li>Mathematics revision class</li>
+              <li>Science experiment reflection</li>
+              <li>English reading comprehension</li>
+            </ul>
+          </article>
+
+          <article class="notice-card">
+            <h3>Best practice</h3>
+            <ul class="notice-list">
+              <li>Keep instructions clear and short</li>
+              <li>Use a single file format for each task</li>
+              <li>Check deadlines every morning</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section panel">
+        <div class="section-header">
+          <h2>Latest Assignments</h2>
+          <span id="assignmentCount">0 assignments</span>
+        </div>
+
+        <div id="assignmentList" class="assignment-grid"></div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignments | Vijay Coaching</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark">V</span>
+          <span>Vijay Coaching</span>
+        </a>
+        <div class="nav-links">
+          <a href="./index.html">Dashboard</a>
+          <a href="./upload.html">Upload</a>
+          <a href="./assignments.html" class="active">Assignments</a>
+          <a href="./students.html">Students</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="section panel">
+        <div class="section-header">
+          <h2>Student Assignment Board</h2>
+          <span id="assignmentCount">0 assignments</span>
+        </div>
+
+        <div id="assignmentList" class="assignment-grid"></div>
+
+        <div class="form-actions" style="margin-top: 24px;">
+          <button id="clearAssignments" class="secondary-btn" type="button" style="background: #eef2ff; color: var(--primary-dark); border: 1px solid rgba(79,70,229,.12);">Clear All</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

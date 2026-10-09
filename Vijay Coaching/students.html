@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students | Vijay Coaching</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark">V</span>
+          <span>Vijay Coaching</span>
+        </a>
+        <div class="nav-links">
+          <a href="./index.html">Dashboard</a>
+          <a href="./upload.html">Upload</a>
+          <a href="./assignments.html">Assignments</a>
+          <a href="./students.html" class="active">Students</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="section panel">
+        <div class="section-header">
+          <h2>Student Progress</h2>
+          <span>Track submissions and class performance</span>
+        </div>
+
+        <div class="student-table-wrap">
+          <table id="studentTable" class="student-table"></table>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
